@@ -8,25 +8,27 @@ public class Main {
         int age = 20;
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
+        } else {
+            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
         }
         System.out.println("Задача 2");
-        int t = 5;
-        if (t >= 5) {
+        int t = 8;
+        if (t <= 5) {
             System.out.println("На улице холодно, нужно одеть шапку");
         } else {
             System.out.println("На улице " + t + " градусов. Сегодня тепло, можно идти без шапки");
         }
         System.out.println("Задача 3");
-        int s = 60;
+        int s = 80;
         if (s > 60) {
             System.out.println("Если скорость " + s + ", то придется заплатить штраф");
         } else {
             System.out.println("Если скорость " + s + ", то можно ездить спокойно");
         }
         System.out.println("Задача 4");
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner4 = new Scanner(System.in);
         System.out.print("Введите возраст: ");
-        int age4 = scanner.nextInt();
+        int age4 = scanner4.nextInt();
         if (age4 >= 2 && age4 <= 6) {
             System.out.println("Если возраст человека равен " + age4 + " лет, то ему нужно ходить в детский сад.");
         }
@@ -42,7 +44,7 @@ public class Main {
         System.out.println("Задача 5");
         Scanner scanner5 = new Scanner(System.in);
         System.out.print("Введите возраст: ");
-        int age5 = scanner.nextInt();
+        int age5 = scanner5.nextInt();
         if (age5 < 5) {
             System.out.println("Если возраст ребенка равен " + age5 + ", то он не может кататься на аттракционе.");
         }
@@ -55,17 +57,15 @@ public class Main {
         System.out.println("Задача 6");
         int a = 102;
         int b = 60;
-        Scanner c = new Scanner(System.in);
-        System.out.print("Введите место: ");
-        int c1 = scanner.nextInt();
-        if (c1 <= a) {
+        int c = 20;
+        if (c <= a) {
             System.out.println("В вагоне есть место");
         } else {
             System.out.println("В вагоне нет места");
         }
-        if (c1 <= b) {
+        if (c <= b) {
             System.out.println("В вагоне есть сидячее место");
-        } else if ((c1 > b && c1 <= a)) {
+        } else if ((c > b && c <= a)) {
             System.out.println("В вагоне есть только стоячее место");
         }
         System.out.println("Задача 7");
